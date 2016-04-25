@@ -1,0 +1,21 @@
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+#controls {
+	float: left;
+	width: 300px;
+}
+label {
+	width: 100px;
+	display: inline-block;
+}
+
+#canvas {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	border: 5px solid black;
+}

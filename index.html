@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>3D Javascript experience</title>
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+	<div id="controls">
+		<label for="xOrigin">Orign X</label>
+		<input type="range" name="xOrigin" min="0" max="800" oninput="xOriginChange(this.value)" />
+		<br>
+		<label for="xOrigin">Orign Y</label>
+		<input type="range" name="yOrigin" min="0" max="800" oninput="yOriginChange(this.value)" />
+		<br>
+		<label for="xOrigin">Refresh speed</label>
+		<input type="range" name="yOrigin" min="1" max="200" value="100" oninput="fpsChange(this.value)" />
+		<br>
+		<label for="xRot">X rotation</label>
+		<input type="range" name="xRot" min="0" max="3.14" value="0" step="0.01" oninput="rotChange(this.value, 'x')" />
+		<br>
+		<label for="yRot">Y rotation</label>
+		<input type="range" name="yRot" min="0" max="3.14" value="0" step="0.01" oninput="rotChange(this.value, 'y')" />
+		<br>
+		<label for="zRot">Z rotation</label>
+		<input type="range" name="zRot" min="0" max="3.14" value="0" step="0.01" oninput="rotChange(this.value, 'z')" />
+		<br>
+		<label for="xTrans">X translation</label>
+		<input type="range" name="xTrans" min="-1" max="1" value="0" step="0.001" oninput="transChange(this.value, 'x')" />
+		<br>
+		<label for="yTrans">Y translation</label>
+		<input type="range" name="yTrans" min="-1" max="1" value="0" step="0.001" oninput="transChange(this.value, 'y')" />
+		<br>
+		<label for="zTrans">Z translation</label>
+		<input type="range" name="zTrans" min="-1" max="1" value="0" step="0.001" oninput="transChange(this.value, 'z')" />
+		<br>
+		<label for="scaling">Scaling</label>
+		<input type="range" name="scaling" min="0.99" max="1.01" value="1" step="0.0001" oninput="scaleChange(this.value)" />
+		<br>
+		<label for="d">D</label>
+		<input type="range" name="d" min="0" max="10000" value="1" step="1" oninput="dChange(this.value)" />
+	</div>
+	<canvas id="canvas" width="800px" height="800px"></canvas>
+	<script src="classes.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
